@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "First quick tracker",
+    "description": "This is awesome. QUICK TRACKER"
+  },
+  {
+    "id": 2,
+    "name": "Second quick tracker",
+    "description": "This is also okay. QUICK TRACKER"
+  }
+]

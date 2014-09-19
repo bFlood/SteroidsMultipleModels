@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "First tracker",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second tracker",
+    "description": "This is also okay."
+  }
+]

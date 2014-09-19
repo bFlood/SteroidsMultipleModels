@@ -1,0 +1,20 @@
+<div ng-controller="IndexCtrl">
+
+    <!-- Bind to Trackers -->
+    <!-- Note the "ng-click" and "ng-repeat" differences -->
+  <ul class="list">
+    <li class="item item-icon-right" ng-click="tracker_open(tracker.id)" ng-repeat="tracker in trackers">
+      Tracker: {{ tracker.name }}
+      <i class="icon ion-ios7-arrow-right"></i>
+    </li>
+  </ul>
+
+    <!-- Bind to QuickTrackers -->
+    <!-- Note the "ng-click" and "ng-repeat" differences -->
+    <ul class="list">
+    <li class="item item-icon-right" ng-click="quicktracker_open(tracker.id)" ng-repeat="tracker in quicktrackers">
+      Tracker: {{ tracker.name }}
+      <i class="icon ion-ios7-arrow-right"></i>
+    </li>
+  </ul>
+</div>
