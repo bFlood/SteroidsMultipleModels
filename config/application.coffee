@@ -4,7 +4,7 @@
 steroids.config.name = "SteroidsMultipleModels"
 
 # ## Start Location
-steroids.config.location = "http://localhost/views/tracker/index.html"
+steroids.config.location = "http://localhost/index.html"
 
 # ## Tab Bar
 # steroids.config.tabBar.enabled = true
