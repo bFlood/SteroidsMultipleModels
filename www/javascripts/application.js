@@ -1,10 +1,17 @@
 
 
+var test = null;
+var encodedView = '';
+
 document.addEventListener('deviceready', function () {
     try {
 
-        var test = steroids.views.WebView('/test.html');
-        test.preload();
+        test = new steroids.views.WebView({ location: '/test.html', id: 'test' });
+        test.preload({}, {
+            onSuccess: function () {
+                encodedView = JSON.stringify(test);
+            }
+        });
     } catch (e) {
         alert('Preload failed - ' + e.message);
     }// 
@@ -12,7 +19,9 @@ document.addEventListener('deviceready', function () {
 
 function pushTest() {
 
-    steroids.layers.push(test);
+    alert('loading view ' + encodedView);
+    var decodedView = JSON.parse(encodedView);
+    steroids.layers.push({ view: decodedView, keepLoading: false });
 }
 
 
